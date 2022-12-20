@@ -9,8 +9,8 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: crimson;
-        color: white;
+        background-color: #0d0b0c;
+        color: #a3b9c8;
         margin: 0;
         padding: 0;
     }
@@ -27,23 +27,39 @@ body {
 
     header {
         display: grid;
-        justify-self: center;
-        align-content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .headerPicture {
+        width: 40px; 
+        margin-left: 10px;
+        border-radius: 50%;
+        
+        
     }
 
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
         
-        border: 5px solid green;
-        border-radius: 2em;
+        border: 3px solid #a3b9c8;
+        border-radius: 1em;
         margin: 10px;
         padding: 10px;
     }
 
+    .buttonSM {
+        background-color: #a3b9c8;
+        color: #0d0b0c;
+        justify-self: center;
+        padding: 15px 40%;
+        text-decoration: none;
+    }
+
     .mainPortrait {
         grid-column: 1 / 2;
-        width: 90%;
+        width: 70%;
+        
         border-radius: 2em;
         padding: 10px;
     }
@@ -52,8 +68,49 @@ body {
         margin: 0;
         padding: 0;
         grid-column: 2 / 3;
+        grid-row: 1 / 3;
         justify-self: center;
         text-align: center;
+    }
+
+    .cardHeaderSM {
+        grid-column: 1 / 3;
+    }
+
+    .myProjectTextSM {
+        grid-column: 1 / 3;
+    }
+
+    .myAboutMeTextSM {
+        grid-column: 1 / 3;
+    }
+
+    .buttonSM {
+        grid-column: 1 / 3;
+    }
+
+    .footerSM {
+        display: flex;
+        
+        padding: 10px;        
+        justify-self: center;
+        grid-row: 6 / 7;
+    }
+
+    .footerSM li {
+        list-style: none;
+    }
+
+    .footerSM a {
+        padding: 10px;
+        text-decoration: none;
+        color: #a3b9c8;
+    }
+
+    .footerSM a:hover {
+        padding: 10px;
+        text-decoration: none;
+        color: #027353;
     }
 
 
