@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    
+}
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 40px repeat(4, 1fr) 40px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.item-1 {
+    position: fixed;
+    grid-row: 1 / 1;
+    grid-column: 1 / 7;
+}
+
+.item-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column: 2 / 4;
+    grid-row: 2 / 6;
+    
+    
+}
+
+.item-2>h1 {
+    grid-column: span 2;
+}
+
+.item-2>p {
+    grid-column: span 2;
+    
+}
+
+.item-3 {
+    grid-column: 4 / 6;
+    grid-row: 2 / 6;
+}
+
+.item-4 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 7;
+}
