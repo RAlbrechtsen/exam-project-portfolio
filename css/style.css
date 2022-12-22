@@ -8,6 +8,15 @@ body {
     text-align: center;
 }
 
+.wrapperL {
+    display: grid;
+    height: 100vh;
+}
+
+
+.wrapperSM {
+    display: none;
+}
 
 
 /* Mobile first css */
@@ -24,7 +33,11 @@ body {
         display: none;
     }
 
-    .wrapper {
+    .wrapperL {
+        display: none;
+    }
+
+    .wrapperSM {
         display: grid;
         height: 100vh;
         grid-template-rows: 40px repeat(4, 1fr) 40px;
