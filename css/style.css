@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: cornflowerblue;
 }
 
 .underDevelopmentL {
@@ -9,9 +10,9 @@ body {
 }
 
 .wrapperL {
-    display: grid;
-    height: 100vh;
+
 }
+
 
 
 .wrapperSM {
