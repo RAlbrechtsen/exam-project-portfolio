@@ -29,6 +29,10 @@ header {
     padding: 10px;
     text-align: right;
 }
+.navBar img {
+    width: 2em;
+    border-radius: 50%;
+}
 
 .navBar li {
     display: inline;
